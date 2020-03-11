@@ -4,7 +4,7 @@ using namespace std;
 
 int n;
 int prevn;
-int occurences[10] = {0,0,0,0,0,0,0,0,0};
+int occurences[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 int main() {
    cout << "Enter the last number" << endl;
