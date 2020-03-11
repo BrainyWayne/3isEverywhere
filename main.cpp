@@ -12,15 +12,15 @@ int main() {
    prevn = n;
    for (int i = 0; i <= n; i++){
 
-
-
+       //You need to target the current value of i
+       int current = i;
 
        //breaking down number into individual numbers
-       while (n > 0){
+       while (current > 0){
 
 
         //Checking the value broken down
-        switch(n % 10){
+        switch(current % 10){
             case 0:
                 occurences[0]++;
                 break;
@@ -56,15 +56,9 @@ int main() {
 
         }
 
-        n/=10;
+        current/=10;
 
     }
-
-       n = --prevn;
-
-
-
-
 
    }
 
