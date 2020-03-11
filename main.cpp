@@ -12,7 +12,7 @@ int main() {
    prevn = n;
    for (int i = 0; i <= n; i++){
 
-       prevn--;
+
 
 
        //breaking down number into individual numbers
@@ -60,7 +60,7 @@ int main() {
 
     }
 
-       n = prevn;
+       n = --prevn;
 
 
 
