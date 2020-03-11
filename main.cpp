@@ -3,13 +3,11 @@
 using namespace std;
 
 int n;
-int prevn;
 int occurences[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 int main() {
    cout << "Enter the last number" << endl;
    cin >> n;
-   prevn = n;
    for (int i = 0; i <= n; i++){
 
        //You need to target the current value of i
