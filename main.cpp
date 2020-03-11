@@ -4,7 +4,6 @@ using namespace std;
 
 int n;
 int prevn;
-int holder[1000];
 int occurences[10] = {0,0,0,0,0,0,0,0,0};
 
 int main() {
@@ -17,12 +16,11 @@ int main() {
 
 
        //breaking down number into individual numbers
-       int b = 0;
        while (n > 0){
-        holder[b] = n % 10;
+
 
         //Checking the value broken down
-        switch(holder[b]){
+        switch(n % 10){
             case 0:
                 occurences[0]++;
                 break;
@@ -59,19 +57,21 @@ int main() {
         }
 
         n/=10;
-        b++;
-           n = prevn;
+
     }
 
+       n = prevn;
 
-        for(int c = 0; c <= 9; c++){
-            cout << c << " appeared " << occurences[c] << " times." << endl;
 
-        }
 
 
 
    }
+
+    for(int c = 0; c <= 9; c++){
+        cout << c << " appeared " << occurences[c] << " times." << endl;
+
+    }
 
 //    int a = 12348;
 //    int b = 0;
