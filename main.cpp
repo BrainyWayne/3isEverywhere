@@ -73,16 +73,6 @@ int main() {
 
     }
 
-//    int a = 12348;
-//    int b = 0;
-//    while (a > 0){
-//        holder[b] = a % 10;
-//        a/=10;
-//        b++;
-//    }
-//
-//    for(int i = 0; i< b; i++){
-//        cout << holder[i] << endl;
-//    }
+
     return 0;
 }
